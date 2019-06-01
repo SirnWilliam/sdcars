@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>SD Cars</title>
+	<link rel="stylesheet" href="cars.css">
+	<link rel="icon" href="images/SDC.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div style="width: 100%;">
+				<table style="width: 100%; text-align: right">
+					<tr>
+						<td>
+							<a href="home.html">
+								<img src="SDCarsLogo.png" alt="logo">
+							</a>
+						</td>
+						<td class="fixHeader">
+							<nav>
+								<ul>
+									<li><a href="contact.html"><b>Contact</b></a></li>
+									<li><a href="about.html"><b>About</b></a></li>
+									<li><a href="schedualAppointment.html"><b>Appointment</b></a></li>
+									<li class="dropList"><a href="javascript:void(0)" class="drop"><b>Search</b> &#x25BC;</a>
+										<div class="dropLinks">
+											<a href="carsForSale.html"><b>Cars On Sale</b></a>
+											<a href="newCars.html"><b>New Cars</b></a>
+											<a href="usedCars.html"><b>Used Cars</b></a>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="flex-container">
+				<div>
+					Great Deals at<br>
+					SD Cars<br>
+					Hurry up <br>
+					and buy a car
+				</div>
+				<div>
+					<img src="images/Renault_Koleos_White_background_White_Crossover_527428_1280x853_opt.jpg" alt="image">
+				</div>
+				<div>
+					<img class="mySlides" src="images/2015_nissan_altima_angularfront_opt.jpg" alt="image">
+					<img class="mySlides" src="images/CarsForSale/2019_toyota_86_0_angularfront_opt.jpg" alt="image">
+					<img class="mySlides" src="images/NewCars/2019-FordExplorerSport4WD_opt.jpg" alt="image">
+					<script>
+						var slideIndex = 0;
+						slideImages();
+
+						function slideImages() {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+							for (i = 0; i < x.length; i++) {
+								x[i].style.display = "none";
+							}
+							slideIndex++;
+							if (slideIndex > x.length) {
+								slideIndex = 1;
+							}
+							x[slideIndex - 1].style.display = "block";
+							setTimeout(slideImages, 3000);
+						}
+
+					</script>
+				</div>
+			</div>
+		</header>
+		<main>
+			<h2>History:</h2>
+			<p>This website was built in 2012 by Sirn William. The purpose of this site is to help people shop cars online, and it serves more than 1000 cars in San Diego. Helps people who has low income to buy a car.</p>
+			<h2>Business hours and Location:</h2>
+			<p>
+				<b>Open:</b> Monday - Friday<br>
+				&emsp;&emsp;&emsp;8:00AM - 6:00PM<br>
+				&emsp;&emsp;&emsp;Saturday and Sunday<br>
+				&emsp;&emsp;&emsp;8:00AM - 2:00PM<br><br>
+				<b>Close:</b> Holidays<br><br>
+				<b>Our location:</b> 2365 Waren Ave,
+				San Diego, CA, 92014.<br><br>
+				<b>E-mail:</b> buyacar@sdcars.com<br><br>
+				<b>Phone:</b> (619)-987-3624
+			</p>
+			<fieldset>
+				<legend style="font-size: 20px; text-align: center;">WHAT OUR CUSTOMERS ARE SAYING</legend>
+				<div class="flex-Customer">
+					<div>
+						“Just purchased and traded in a car with SD Cars, it was by far the easiest and one, if not the, best experiences I've ever had purchasing a car. Hanna, Jared, Stephen, Brittnee and the gentleman who deliver my car went above and beyond. I would highly recommend!”<br><br><br><br><br><br><br>
+						<p>- John K.<br>
+							2011 Toyota Camry LE</p>
+					</div>
+					<div>
+						“At 10:02 AM on Friday I bought a car from SDCars.com. I uploaded all my forms, I electronically signed all the papers, and was approved for financing without ever speaking to a human. At 10:07 AM on Saturday they delivered the car to my door. 24 hours, no sales person, no hassle, no price haggling. If you are in the San Diego area looking for a used car you should be looking here before anywhere else.”
+						<br>
+						<br>
+						<br>
+						<br>
+						<p>
+							- Karen S.<br>
+							2018 Nissan Sentra
+						</p>
+					</div>
+					<div>
+						“I JUST got my new Mitsubishi Endeavor delivered. It is fabulous! The entire process is amazing, smooth and painless. The people at SD Cars have been wonderful to work with and were very helpful. I felt Stephen when out of his way to answer my questions and help me through the process. I have a fear of going to car dealerships. I had NO fear working with SD Cars. I am super excited about my new car and can't wait to showcase and tell everybody about SD Cars!”
+						<br>
+						<br>
+						<br>
+						<p>
+							- Jacob F.<br>
+							2018 Mitsubishi Endeavor
+						</p>
+					</div>
+				</div>
+			</fieldset>
+		</main>
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<a href="home.html">Home</a>
+					</td>
+					<td>
+						<a href="schedualAppointment.html">Appointment</a>
+					</td>
+					<td>
+						<a href="about.html">About</a>
+					</td>
+					<td>
+						<a href="contact.html">Contact Us</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="carsForSale.html">Cars on Sale</a>
+					</td>
+					<td>
+						<a href="newCars.html">New Cars</a>
+					</td>
+					<td>
+						<a href="usedCars.html">Used Cars</a>
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			Copyright &copy; 2012 San Diego Cars
+		</footer>
+	</div>
+
+</body>
+
+</html>

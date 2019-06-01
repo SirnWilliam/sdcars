@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>SD Cars</title>
+	<link rel="stylesheet" href="cars.css">
+	<link rel="icon" href="images/SDC.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div style="width: 100%;">
+				<table style="width: 100%; text-align: right">
+					<tr>
+						<td>
+							<a href="home.html">
+								<img src="SDCarsLogo.png" alt="image">
+							</a>
+						</td>
+						<td class="fixHeader">
+							<nav>
+								<ul>
+									<li><a href="contact.html"><b>Contact</b></a></li>
+									<li><a href="about.html"><b>About</b></a></li>
+									<li><a href="schedualAppointment.html"><b>Appointment</b></a></li>
+									<li class="dropList"><a href="javascript:void(0)" class="drop"><b>Search</b> &#x25BC;</a>
+										<div class="dropLinks">
+											<a href="carsForSale.html"><b>Cars On Sale</b></a>
+											<a href="newCars.html"><b>New Cars</b></a>
+											<a href="usedCars.html"><b>Used Cars</b></a>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="flex-container">
+				<div>
+					Great Deals at<br>
+					SD Cars<br>
+					Hurry up <br>
+					and buy a car
+				</div>
+				<div>
+					<img src="images/Renault_Koleos_White_background_White_Crossover_527428_1280x853_opt.jpg" alt="image">
+				</div>
+				<div>
+					<img class="mySlides" src="images/2015_nissan_altima_angularfront_opt.jpg" alt="image">
+					<img class="mySlides" src="images/CarsForSale/2019_toyota_86_0_angularfront_opt.jpg" alt="image">
+					<img class="mySlides" src="images/NewCars/2019-FordExplorerSport4WD_opt.jpg" alt="image">
+					<script>
+						var slideIndex = 0;
+						slideImages();
+
+						function slideImages() {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+							for (i = 0; i < x.length; i++) {
+								x[i].style.display = "none";
+							}
+							slideIndex++;
+							if (slideIndex > x.length) {
+								slideIndex = 1;
+							}
+							x[slideIndex - 1].style.display = "block";
+							setTimeout(slideImages, 3000);
+						}
+					</script>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="flex-container">
+				<figure>
+					<img src="images/2019NissanAltimaSedan_opt.jpg" alt="image" width="400" height="300">
+					<figcaption>
+						2019 Toyota Venza<br>
+						Miles: 30 Miles<br>
+						Price: $24,000
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/Honda/Honda_Accord_and_CR-V_opt.jpg" alt="image" width="400" height="300">
+					<figcaption>
+						2018 Honda CRV<br>
+						Miles: 18,000 Miles<br>
+						Price: $23,000
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/2017_kia_cadenza_angularfront_opt.jpg" alt="image" width="400" height="300">
+					<figcaption>
+						2017 Kia Candeza<br>
+						Miles: 31,000 Miles<br>
+						Price: $16,000
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/navy-mini_opt.jpg" alt="image" width="400" height="300">
+					<figcaption>
+						2019 Mini Cooper<br>
+						Miles: 4,000 Miles<br>
+						Price: $21,000
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/2011-volvo-c70-2-door-convertible-auto-angular-front-exterior-view_100309993_l_opt.jpg" alt="image" width="400" height="300">
+					<figcaption>
+						2011 Volvo C70<br>
+						Miles: 102,000 Miles<br>
+						Price: $8,000
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/KIA_Rio_Light_Blue_White_background_526267_1024x768_opt.jpg" alt="image" width="400" height="300">
+					<figcaption>
+						2018 Kia Rio<br>
+						Miles: 17,000 Miles<br>
+						Price: $16,000
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/2019%20INFINITI%20Q50_opt.jpg" alt="image" width="400" height="300">
+					<figcaption>
+						2019 Infiniti Q50 Sport<br>
+						Miles: 12 Miles<br>
+						Price: $27,000
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/2015_nissan_altima_angularfront_opt.jpg" alt="image" width="398" height="298">
+					<figcaption>
+						2015 Nissan Altima<br>
+						Miles: 53,000 Miles<br>
+						Price: $9,500
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/2013_bmw_x3_angularfront_opt.jpg" alt="image" width="398" height="298">
+					<figcaption>
+						2013 BMW X3<br>
+						Miles: 81,000 Miles<br>
+						Price: $11,000
+					</figcaption>
+				</figure>
+			</div>
+		</main>
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<a href="home.html">Home</a>
+					</td>
+					<td>
+						<a href="schedualAppointment.html">Appointment</a>
+					</td>
+					<td>
+						<a href="about.html">About</a>
+					</td>
+					<td>
+						<a href="contact.html">Contact Us</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="carsForSale.html">Cars on Sale</a>
+					</td>
+					<td>
+						<a href="newCars.html">New Cars</a>
+					</td>
+					<td>
+						<a href="usedCars.html">Used Cars</a>
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			Copyright &copy; 2012 San Diego Cars
+		</footer>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>SD Cars</title>
+	<link rel="stylesheet" href="cars.css">
+	<link rel="icon" href="images/SDC.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div style="width: 100%;">
+				<table style="width: 100%; text-align: right">
+					<tr>
+						<td>
+							<a href="home.html">
+								<img src="SDCarsLogo.png" alt="image">
+							</a>
+						</td>
+						<td class="fixHeader">
+							<nav>
+								<ul>
+									<li><a href="contact.html"><b>Contact</b></a></li>
+									<li><a href="about.html"><b>About</b></a></li>
+									<li><a href="schedualAppointment.html"><b>Appointment</b></a></li>
+									<li class="dropList"><a href="javascript:void(0)" class="drop"><b>Search</b> &#x25BC;</a>
+										<div class="dropLinks">
+											<a href="carsForSale.html"><b>Cars On Sale</b></a>
+											<a href="newCars.html"><b>New Cars</b></a>
+											<a href="usedCars.html"><b>Used Cars</b></a>
+										</div>
+									</li>
+								</ul>
+							</nav>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="flex-container">
+				<div>
+					Great Deals at<br>
+					SD Cars<br>
+					Hurry up <br>
+					and buy a car
+				</div>
+				<div>
+					<img src="images/Renault_Koleos_White_background_White_Crossover_527428_1280x853_opt.jpg" alt="image">
+				</div>
+				<div>
+					<img class="mySlides" src="images/2015_nissan_altima_angularfront_opt.jpg" alt="image">
+					<img class="mySlides" src="images/CarsForSale/2019_toyota_86_0_angularfront_opt.jpg" alt="image">
+					<img class="mySlides" src="images/NewCars/2019-FordExplorerSport4WD_opt.jpg" alt="image">
+					<script>
+						var slideIndex = 0;
+						slideImages();
+
+						function slideImages() {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+							for (i = 0; i < x.length; i++) {
+								x[i].style.display = "none";
+							}
+							slideIndex++;
+							if (slideIndex > x.length) {
+								slideIndex = 1;
+							}
+							x[slideIndex - 1].style.display = "block";
+							setTimeout(slideImages, 3000);
+						}
+
+					</script>
+				</div>
+			</div>
+		</header>
+		<main>
+			<h2>Contact Us Today!</h2>
+			<p>Required fields are marked with an asterisk *.</p>
+			<form>
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label for="myFName">*First Name:</label>
+					<input type="text" name="myFName" id="myFName" required="required" placeholder="First Name">
+					<label for="myLName">*Last Name:</label>
+					<input type="text" name="myLName" id="myLName" required="required" placeholder="Last Name">
+					<label for="myEmail">*E-mail:</label>
+					<input type="email" name="myEmail" id="myEmail" size="35" required="required" placeholder="E-mail">
+					<label for="myPhone">Phone:</label>
+					<input type="tel" name="myPhone" id="myPhone" maxlength="12" placeholder="Phone">
+					<label for="myComments">Comments:</label>
+					<textarea name="myComments" id="myComments" rows="2" cols="30" placeholder="Your comments here"></textarea>
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<a href="home.html">Home</a>
+					</td>
+					<td>
+						<a href="schedualAppointment.html">Appointment</a>
+					</td>
+					<td>
+						<a href="about.html">About</a>
+					</td>
+					<td>
+						<a href="contact.html">Contact Us</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="carsForSale.html">Cars on Sale</a>
+					</td>
+					<td>
+						<a href="newCars.html">New Cars</a>
+					</td>
+					<td>
+						<a href="usedCars.html">Used Cars</a>
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			Copyright &copy; 2012 San Diego Cars
+		</footer>
+	</div>
+
+</body>
+
+</html>
